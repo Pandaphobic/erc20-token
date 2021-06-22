@@ -1,8 +1,16 @@
 import React, { Component } from "react"
 import CalistaToken from "./contracts/CalistaToken.json"
 import getWeb3 from "./getWeb3"
+import { Image, Card, Col, Button, Container, Nav, Row } from "react-bootstrap"
+import CalistaTokenImage from "./assets/Calista Tokens.png"
 
-import "./App.css"
+import "./bootstrap.css"
+
+const networkName = "localhost:3000"
+
+const cardStyle = {
+  borderRadius: "25px"
+}
 
 class App extends Component {
   state = { web3: null, accounts: null, contract: null }
@@ -51,14 +59,54 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <h1>Good to Go!</h1>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');</style>
+        <Image src={CalistaTokenImage} fluid />
+        <Container style={{ marginTop: "2em" }}>
+          <Card style={cardStyle}>
+            <Card.Header style={cardStyle}>
+              <Nav defaultActiveKey="/home" as="ul">
+                <Nav.Item as="li">
+                  <Nav.Link href="/">Home</Nav.Link>
+                </Nav.Item>
+                <Nav.Item as="li">
+                  <Nav.Link href="/" disabled>
+                    About
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item as="li">
+                  <Nav.Link eventKey="link-1" disabled>
+                    Faucet
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item as="li">
+                  <Nav.Link eventKey="link-2" disabled>
+                    GitHub
+                  </Nav.Link>
+                </Nav.Item>
+              </Nav>
+            </Card.Header>
+            <Card.Body>
+              <Card.Title>Connect Your Wallet to Get Started!</Card.Title>
+              <Card.Text>Use your Metamask wallet connect to {networkName}</Card.Text>
+              <Row>
+                <Col>
+                  <Button className="btn btn-block" style={{ borderRadius: "10px" }} variant="warning" block>
+                    Connect
+                  </Button>
+                </Col>
+              </Row>
+            </Card.Body>
+          </Card>
+        </Container>
+
+        {/* <h1>Good to Go!</h1>
         <p>Your Truffle Box is installed and ready.</p>
         <h2>Smart Contract Example</h2>
         <p>If your contracts compiled and migrated successfully, below you should see the total CALI owned by the currently selected account</p>
 
         <div>
           The stored value is: <strong>{this.state.storageValue}</strong>
-        </div>
+        </div> */}
       </div>
     )
   }
