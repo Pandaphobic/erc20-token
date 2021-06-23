@@ -91,7 +91,7 @@ class App extends Component {
                       </Nav.Link>
                     </Nav.Item>
                     <Nav.Item as="li">
-                      <Nav.Link eventKey="link-2" disabled>
+                      <Nav.Link href="https://github.com/Pandaphobic/erc20-token" eventKey="link-2">
                         GitHub
                       </Nav.Link>
                     </Nav.Item>
