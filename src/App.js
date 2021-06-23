@@ -5,15 +5,7 @@ import { Image, Card, Col, Button, Container, Nav, Row } from "react-bootstrap"
 import CalistaTokenImage from "./assets/Calista Tokens.png"
 
 import "./bootstrap.css"
-import { auto } from "@popperjs/core"
-
-const networkName = "localhost:3000"
-
-const cardStyle = {
-  borderRadius: "25px",
-  margin: auto,
-  maxWidth: "34rem"
-}
+import Home from "./pages/home"
 
 class App extends Component {
   state = { web3: null, accounts: null, contract: null }
@@ -63,7 +55,7 @@ class App extends Component {
     return (
       <div className="App">
         <style>@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');</style>
-        <Container style={{ margin: auto, maxWidth: "34rem" }}>
+        <Container style={{ margin: "auto", maxWidth: "34rem" }}>
           <Col md="5"></Col>
           <Col>
             <Image src={CalistaTokenImage} fluid />
@@ -71,47 +63,7 @@ class App extends Component {
           <Col md="5"></Col>
         </Container>
 
-        <Container style={{ marginTop: "2em" }}>
-          <Row>
-            <Col>
-              <Card style={cardStyle}>
-                <Card.Header style={cardStyle}>
-                  <Nav defaultActiveKey="/home" as="ul">
-                    <Nav.Item as="li">
-                      <Nav.Link href="/">Home</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item as="li">
-                      <Nav.Link href="/" disabled>
-                        About
-                      </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item as="li">
-                      <Nav.Link eventKey="link-1" disabled>
-                        Faucet
-                      </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item as="li">
-                      <Nav.Link href="https://github.com/Pandaphobic/erc20-token" eventKey="link-2">
-                        GitHub
-                      </Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                </Card.Header>
-                <Card.Body>
-                  <Card.Title>Connect Your Wallet to Get Started!</Card.Title>
-                  <Card.Text>Use your Metamask wallet and connect to {networkName}</Card.Text>
-                  <Row>
-                    <Col>
-                      <Button className="btn btn-block" style={{ borderRadius: "10px" }} variant="warning" block>
-                        Connect
-                      </Button>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
+        <Home />
 
         {/* <h1>Good to Go!</h1>
         <p>Your Truffle Box is installed and ready.</p>

@@ -4301,18 +4301,18 @@ fieldset:disabled .btn {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #eceeef;
+  border-bottom: 1px solid #e46e06;
 }
 
 .nav-tabs .nav-link {
   margin-bottom: -1px;
   background: none;
-  border: 1px solid transparent;
+  border: 4px solid transparent;
 }
 
-.nav-tabs .nav-link:hover,
-.nav-tabs .nav-link:focus {
-  border-color: #f7f7f9 #f7f7f9 #eceeef;
+.nav-tabs .nav-link:hover {
+  border-bottom-color: #442d27;
+  border-bottom-width: 4px;
   isolation: isolate;
 }
 
@@ -4325,8 +4325,9 @@ fieldset:disabled .btn {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #55595c;
-  background-color: #ecebce;
-  border-color: #eceeef #eceeef #fff;
+  background-color: transparent;
+  border-bottom-color: #eab500;
+  border-bottom-width: 4px;
 }
 
 .nav-tabs .dropdown-menu {
@@ -4838,6 +4839,7 @@ fieldset:disabled .btn {
 }
 
 .card-header {
+  border-radius: 25px;
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
