@@ -1,9 +1,12 @@
 import React, { Component } from "react"
 import CalistaToken from "./contracts/CalistaToken.json"
 import getWeb3 from "./getWeb3"
-import { Image, Card, Col, Button, Container, Nav, Row } from "react-bootstrap"
+import { Image, Col, Container } from "react-bootstrap"
 import CalistaTokenImage from "./assets/Calista Tokens.png"
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import MainCard from "./components/MainCard"
+import About from "./pages/about"
+import Faucet from "./pages/faucet"
 import "./bootstrap.css"
 import Home from "./pages/home"
 
@@ -62,9 +65,19 @@ class App extends Component {
           </Col>
           <Col md="5"></Col>
         </Container>
-
-        <Home />
-
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <MainCard page={<Home />} />
+            </Route>
+            <Route path="/about">
+              <MainCard page={<About />} />
+            </Route>
+            <Route path="/faucet">
+              <MainCard page={<Faucet />} />
+            </Route>
+          </Switch>
+        </Router>
         {/* <h1>Good to Go!</h1>
         <p>Your Truffle Box is installed and ready.</p>
         <h2>Smart Contract Example</h2>
