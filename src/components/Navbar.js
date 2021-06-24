@@ -8,23 +8,25 @@ export default class Navbar extends Component {
       <Card.Header>
         <Nav variant="tabs" defaultActiveKey="home">
           <Nav.Item as="li">
-            <Link className="nav-link" to="/">
+            <Nav.Link as={Link} to="/">
               Home
-            </Link>
+            </Nav.Link>
           </Nav.Item>
 
           <Nav.Item as="li">
-            <Link className="nav-link" to="/about">
+            <Nav.Link as={Link} to="/about">
               About
-            </Link>
+            </Nav.Link>
           </Nav.Item>
+
           <Nav.Item as="li">
-            <Link className="nav-link" to="/faucet">
+            <Nav.Link as={Link} to="/faucet">
               Faucet
-            </Link>
+            </Nav.Link>
           </Nav.Item>
+
           <Nav.Item as="li">
-            <Nav.Link eventKey="link-1" href="https://github.com/Pandaphobic/erc20-token" eventKey="link-2">
+            <Nav.Link eventKey="link-1" href="https://github.com/Pandaphobic/erc20-token">
               GitHub
             </Nav.Link>
           </Nav.Item>
