@@ -8,19 +8,19 @@ export default class Navbar extends Component {
       <Card.Header>
         <Nav variant="tabs" defaultActiveKey="home">
           <Nav.Item as="li">
-            <Nav.Link as={Link} to="/">
+            <Nav.Link exact href="/" as={Link} to="/">
               Home
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item as="li">
-            <Nav.Link as={Link} to="/about">
+            <Nav.Link href="/about" as={Link} to="/about">
               About
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item as="li">
-            <Nav.Link as={Link} to="/faucet">
+            <Nav.Link href="/faucet" as={Link} to="/faucet">
               Faucet
             </Nav.Link>
           </Nav.Item>
