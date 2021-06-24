@@ -8,7 +8,6 @@ export default class Navbar extends Component {
       <Card.Header>
         <Nav variant="tabs" defaultActiveKey="home">
           <Nav.Item as="li">
-            {/* <Nav.Link> */}
             <Link className="nav-link" to="/">
               Home
             </Link>
