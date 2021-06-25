@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from "react"
-import { Card, Button, Row, Badge } from "react-bootstrap"
+import { Card, Button, Row } from "react-bootstrap"
 import MetaMaskOnboarding from "@metamask/onboarding"
 
 const ONBOARD_TEXT = "Click here to install MetaMask!"
@@ -60,7 +60,7 @@ export default class Faucet extends Component {
     return (
       <Card.Body>
         <Card.Title>CALI Faucet!</Card.Title>
-        <Card.Text>Use the button below to connect to your wallet! Once connect, </Card.Text>
+        <Card.Text>Use the button below to connect to your wallet! Once connected, turn on the faucet and receive 1 Calista Token</Card.Text>
         <Row>
           <OnboardingButton />
         </Row>

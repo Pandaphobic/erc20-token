@@ -1,7 +1,5 @@
 import React, { Component, useState } from "react"
 import CalistaToken from "./contracts/CalistaToken.json"
-import { ethers } from "ethers"
-
 import { Image, Col, Container } from "react-bootstrap"
 import CalistaTokenImage from "./assets/Calista Tokens.png"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
