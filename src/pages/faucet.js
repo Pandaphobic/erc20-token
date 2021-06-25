@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from "react"
-import { Card, Button, Row, Image } from "react-bootstrap"
+import { Card, Button, Row } from "react-bootstrap"
 import MetaMaskOnboarding from "@metamask/onboarding"
 
 const ONBOARD_TEXT = "Click here to install MetaMask!"
