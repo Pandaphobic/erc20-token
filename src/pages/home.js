@@ -1,19 +1,12 @@
-import React, { Component } from "react"
+import React from "react"
 import { Card, Button, Row } from "react-bootstrap"
-const networkName = "localhost:3000"
 
-export default class Home extends Component {
-  render() {
-    return (
-      <Card.Body>
-        <Card.Title>Connect Your Wallet to Get Started!</Card.Title>
-        <Card.Text>Use your Metamask wallet and connect to {networkName}</Card.Text>
-        <Row>
-          <Button className="btn w-50 m-auto" style={{ borderRadius: "10px" }} variant="warning" block>
-            Connect
-          </Button>
-        </Row>
-      </Card.Body>
-    )
-  }
+export default function home() {
+  return (
+    <Card.Body>
+      <Card.Title>Connect Your Wallet to Get Started!</Card.Title>
+      <Card.Text>Thanks for checking out this project! This is my best effort to make a super simple ERC20 including a way of dispearsing it. More details to come!</Card.Text>
+      <Row></Row>
+    </Card.Body>
+  )
 }

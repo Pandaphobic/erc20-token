@@ -6,28 +6,22 @@ export default class Navbar extends Component {
   render() {
     return (
       <Card.Header>
-        <Nav variant="tabs" defaultActiveKey="home">
-          <Nav.Item as="li">
-            <Nav.Link exact href="/" as={Link} to="/">
-              Home
+        <Nav className="justify-content-center" variant="tabs" as="ul">
+          <Nav.Item className="m-auto" as="li">
+            <Nav.Link href="/home" as={Link} to="/home">
+              Home <i class="fas fa-home"></i>
             </Nav.Link>
           </Nav.Item>
 
-          <Nav.Item as="li">
-            <Nav.Link href="/about" as={Link} to="/about">
-              About
-            </Nav.Link>
-          </Nav.Item>
-
-          <Nav.Item as="li">
+          <Nav.Item className="m-auto" as="li">
             <Nav.Link href="/faucet" as={Link} to="/faucet">
-              Faucet
+              Faucet <i class="fas fa-faucet"></i>
             </Nav.Link>
           </Nav.Item>
 
-          <Nav.Item as="li">
-            <Nav.Link eventKey="link-1" href="https://github.com/Pandaphobic/erc20-token">
-              GitHub
+          <Nav.Item className="m-auto" as="li">
+            <Nav.Link href="https://github.com/Pandaphobic/erc20-token">
+              GitHub <i class="fab fa-github"></i>
             </Nav.Link>
           </Nav.Item>
         </Nav>
