@@ -9,19 +9,19 @@ export default class Navbar extends Component {
         <Nav className="justify-content-center" variant="tabs" as="ul">
           <Nav.Item className="m-auto" as="li">
             <Nav.Link href="/home" as={Link} to="/home">
-              Home <i class="fas fa-home"></i>
+              Home <i className="fas fa-home"></i>
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item className="m-auto" as="li">
             <Nav.Link href="/faucet" as={Link} to="/faucet">
-              Faucet <i class="fas fa-faucet"></i>
+              Faucet <i className="fas fa-faucet"></i>
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item className="m-auto" as="li">
             <Nav.Link href="https://github.com/Pandaphobic/erc20-token">
-              GitHub <i class="fab fa-github"></i>
+              GitHub <i className="fab fa-github"></i>
             </Nav.Link>
           </Nav.Item>
         </Nav>
