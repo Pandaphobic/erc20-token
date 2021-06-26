@@ -10,7 +10,7 @@ const cardStyle = {
 export default class MainCard extends Component {
   render() {
     return (
-      <Container style={{ marginTop: "2em" }}>
+      <Container style={{ marginTop: "2em", marginBottom: "2em" }}>
         <Row>
           <Col>
             <Card style={cardStyle}>
