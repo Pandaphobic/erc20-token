@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, Row, Col, Container } from "react-bootstrap"
+import { Card, Row, Col } from "react-bootstrap"
 import Fire from "../components/fire"
 
 export default function Campfire() {

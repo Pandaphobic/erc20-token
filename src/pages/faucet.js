@@ -50,9 +50,7 @@ export function OnboardingButton() {
     if (isConnected) {
       var CaliTokenContract = new web3.eth.Contract(CaliTokenJson, contractAddress)
       const amount = "69"
-      CaliTokenContract.methods.mint("0x836db97a1c884Ba9006b42eb99f40f85fb03B1aa", web3.utils.toWei(amount)).send({ from: "0x836db97a1c884Ba9006b42eb99f40f85fb03B1aa" })
-
-      web3.eth.getAccounts(console.log)
+      CaliTokenContract.methods.mint(accounts[0], web3.utils.toWei(amount)).send({ from: accounts[0] })
     } else {
       if (MetaMaskOnboarding.isMetaMaskInstalled()) {
         window.ethereum.request({ method: "eth_requestAccounts" }).then(newAccounts => setAccounts(newAccounts))
