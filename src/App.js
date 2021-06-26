@@ -4,6 +4,8 @@ import CalistaTokenImage from "./assets/Calista Tokens.png"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import MainCard from "./components/MainCard"
 import Faucet from "./pages/faucet"
+import Campfire from "./pages/campfire"
+
 import "./bootstrap.css"
 import Home from "./pages/home"
 
@@ -27,6 +29,9 @@ class App extends Component {
 
             <Route exact path="/faucet">
               <MainCard page={<Faucet />} />
+            </Route>
+            <Route exact path="/campfire">
+              <MainCard page={<Campfire />} />
             </Route>
           </Switch>
         </Router>

@@ -20,6 +20,12 @@ export default class Navbar extends Component {
           </Nav.Item>
 
           <Nav.Item className="m-auto" as="li">
+            <Nav.Link href="/campfire" as={Link} to="/campfire">
+              Campfire <i className="fas fa-fire"></i>
+            </Nav.Link>
+          </Nav.Item>
+
+          <Nav.Item className="m-auto" as="li">
             <Nav.Link href="https://github.com/Pandaphobic/erc20-token">
               GitHub <i className="fab fa-github"></i>
             </Nav.Link>
