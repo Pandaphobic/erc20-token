@@ -10,7 +10,7 @@ export default function Campfire() {
     <Card.Body>
       <Card.Title>Burn You CALI Tokens!</Card.Title>
       <Row>
-        <Card.Text>Throw your CALI Tokens in the fire for no reason!</Card.Text>
+        <Card.Text>Throw your CALI Tokens into the fire for no reason! Note: this will PERMANENTLY delete / burn them from your wallet.</Card.Text>
       </Row>
 
       <Row className="mb-4 mt-5">

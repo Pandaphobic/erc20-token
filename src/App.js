@@ -21,6 +21,7 @@ class App extends Component {
           </Col>
           <Col md="5"></Col>
         </Container>
+
         <Router>
           <Switch>
             <Route exact path={["/home", "/"]}>
